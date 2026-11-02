@@ -228,16 +228,40 @@ function render(){
   container.append(empty);
  }
  document.getElementById("count").textContent=count;
- document.getElementById("total").textContent="$"+total.toFixed(2);
 }
-function checkout(){
-
-  if(!cart.length){
-
+async function checkout() {
+  if (!cart.length) {
     alert("Your cart is empty.");
+    return;
+  }
 
-    return;}
-  window.location.href="https://buy.stripe.com/28E7sF4E38228Zc9KA8AE01";
+  try {
+    const response = await fetch(
+      "https://brown-playas-checkout.5n649wnpmt.workers.dev",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          items: cart.map(item => ({
+            size: item.size,
+            quantity: item.qty
+          }))
+        })
+      }
+    );
+
+    const data = await response.json();
+
+    if (!response.ok || !data.url) {
+      throw new Error(data.error || "Checkout failed");
+    }
+
+    window.location.href = data.url;
+  } catch (error) {
+    alert("Checkout error: " + error.message);
+  }
 }
 
 document.addEventListener("keydown",e=>{
