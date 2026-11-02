@@ -230,18 +230,13 @@ function render(){
  document.getElementById("count").textContent=count;
  document.getElementById("total").textContent="$"+total.toFixed(2);
 }
-
-
 function checkout(){
 
   if(!cart.length){
 
     alert("Your cart is empty.");
 
-    return;
-
-  }
-
+    return;}
   window.location.href="https://buy.stripe.com/28E7sF4E38228Zc9KA8AE01";
 }
 
