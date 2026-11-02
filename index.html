@@ -231,9 +231,18 @@ function render(){
  document.getElementById("total").textContent="$"+total.toFixed(2);
 }
 
+
 function checkout(){
- if(!cart.length){alert("Your cart is empty.");return}
- alert("Your cart is ready! Stripe checkout must be connected securely before accepting orders.");
+
+  if(!cart.length){
+
+    alert("Your cart is empty.");
+
+    return;
+
+  }
+
+  window.location.href="https://buy.stripe.com/28E7sF4E38228Zc9KA8AE01";
 }
 
 document.addEventListener("keydown",e=>{
