@@ -1,23 +1,245 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#090909">
-<meta name="description" content="BROWN PLAYAS — Los Angeles streetwear. Official clothing brand website.">
-<title>BROWN PLAYAS — LA Streetwear</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#080808">
+<title>BROWN PLAYAS | LOS ANGELES</title>
+<link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&family=Oswald:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Permanent+Marker&display=swap');
-:root{--gold:#c8a64e;--paper:#f1eee6;--black:#090909}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--black);color:var(--paper);font-family:Arial,Helvetica,sans-serif;overflow-x:hidden}body:before{content:"";pointer-events:none;position:fixed;inset:0;z-index:10;opacity:.14;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.42'/%3E%3C/svg%3E")}.ticker{background:var(--gold);color:#111;overflow:hidden;white-space:nowrap;font:14px Anton,Impact,sans-serif;letter-spacing:2px;padding:10px 0}.ticker span{display:inline-block;animation:marquee 20s linear infinite}@keyframes marquee{to{transform:translateX(-50%)}}header{position:relative;z-index:2;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:19px 6%;border-bottom:1px solid #39352d}.brand{font:clamp(20px,4vw,30px) Anton,Impact,sans-serif;letter-spacing:1px;color:var(--paper);text-decoration:none;transform:skew(-5deg)}nav{display:flex;gap:18px}nav a{color:var(--paper);text-decoration:none;font:12px Anton,Impact,sans-serif;letter-spacing:1px}nav a:hover{color:var(--gold)}.hero{position:relative;isolation:isolate;min-height:78vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:100px 20px;overflow:hidden;background:radial-gradient(ellipse at center,#3b3426 0%,#181818 44%,#080808 77%)}.hero:before{content:"LOS ANGELES";position:absolute;top:11%;left:-5%;font:clamp(90px,20vw,310px) Anton,Impact,sans-serif;color:#ffffff08;transform:rotate(-11deg);white-space:nowrap;z-index:-1}.hero:after{content:"";position:absolute;inset:0;z-index:-1;background:repeating-linear-gradient(160deg,transparent 0 65px,#ffffff08 66px 67px,transparent 68px 130px)}.eyebrow{font:14px Anton,Impact,sans-serif;letter-spacing:6px;color:var(--gold);margin:0 0 22px}.hero h1{font:clamp(68px,15vw,180px)/.83 Anton,Impact,sans-serif;letter-spacing:-2px;margin:0;text-shadow:5px 5px 0 #333,9px 9px 0 #000;transform:rotate(-3deg);animation:rise .9s ease both}.hero h1 span{display:block}.hero h1 .scribble{font-family:'Permanent Marker',cursive;color:var(--gold);font-size:.72em;letter-spacing:-4px;transform:rotate(2deg);text-shadow:4px 5px 0 #000}@keyframes rise{from{opacity:0;transform:translateY(35px) rotate(-5deg)}to{opacity:1;transform:translateY(0) rotate(-3deg)}}.tagline{margin:35px auto 30px;max-width:450px;font-size:13px;letter-spacing:3px;line-height:1.8}.cta{display:inline-block;background:var(--gold);color:#111;padding:17px 37px;text-decoration:none;font:19px Anton,Impact,sans-serif;letter-spacing:2px;transform:skew(-6deg);transition:transform .2s,background .2s}.cta:hover{background:#eed083;transform:skew(-6deg) scale(1.05)}.stamp{position:absolute;right:5%;bottom:7%;border:2px solid var(--gold);padding:12px;color:var(--gold);font:13px Anton,Impact,sans-serif;letter-spacing:2px;transform:rotate(-13deg)}section.collection{padding:85px 6% 100px;max-width:1300px;margin:auto}.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;border-bottom:2px solid var(--gold);padding-bottom:15px;margin-bottom:35px}.section-head h2{font:clamp(42px,8vw,88px)/1 Anton,Impact,sans-serif;margin:0}.section-head small{color:var(--gold);font:12px Anton,Impact,sans-serif;letter-spacing:2px}.products{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.product{border:1px solid #383838;background:#171717}.product-art{min-height:300px;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:12px;padding:25px;background:radial-gradient(circle,#333 0%,#151515 70%);text-align:center}.product-art strong{font:clamp(32px,5vw,60px)/.95 Anton,Impact,sans-serif;transform:rotate(-7deg);text-shadow:4px 4px #000}.product-art em{font:13px 'Permanent Marker',cursive;color:var(--gold)}.product-info{padding:20px}.product-info h3{font:23px Anton,Impact,sans-serif;letter-spacing:1px;margin:0 0 6px}.product-info p{color:var(--gold);margin:0;font-size:13px}.manifesto{padding:85px 7%;text-align:center;background:#c8a64e;color:#0b0b0b;transform:skewY(-2deg);margin:20px 0 75px}.manifesto>div{transform:skewY(2deg)}.manifesto h2{font:clamp(48px,10vw,110px)/.95 Anton,Impact,sans-serif;margin:0 0 20px}.manifesto p{max-width:560px;margin:auto;font-weight:bold;line-height:1.7;letter-spacing:1px}footer{padding:45px 6%;border-top:1px solid #444;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:12px;color:#aaa}footer strong{font:24px Anton,Impact,sans-serif;color:#eee}@media(max-width:700px){header{flex-direction:column;padding:17px 5%}nav{gap:24px}.hero{min-height:72vh;padding:90px 14px}.hero h1{font-size:clamp(68px,16vw,115px)}.stamp{bottom:3%;font-size:10px}.products{grid-template-columns:1fr}.product-art{min-height:260px}.section-head{align-items:start;flex-direction:column}.tagline{font-size:11px}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;scroll-behavior:auto!important;transition:none!important}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#080808;color:#eee;font-family:Oswald,Arial,sans-serif;overflow-x:hidden}
+button,select{font:inherit}
+button{cursor:pointer}
+a{text-decoration:none;color:inherit}
+.chrome{
+ font-family:UnifrakturCook,Georgia,serif;
+ background:linear-gradient(180deg,#fff 0%,#aaa 18%,#444 34%,#fff 49%,#777 64%,#eee 80%,#555 100%);
+ -webkit-background-clip:text;
+ background-clip:text;
+ -webkit-text-fill-color:transparent;
+ filter:drop-shadow(2px 3px 2px #000);
+}
+.top{background:linear-gradient(90deg,#888,#eee,#888);color:#000;text-align:center;padding:9px;letter-spacing:3px;font-weight:700;font-size:12px}
+header{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:17px 5%;border-bottom:1px solid #555;background:#050505}
+.logo{font-size:clamp(23px,5.5vw,38px);line-height:1.2;min-width:0}
+.cartbtn{background:#111;color:#fff;border:1px solid #999;padding:12px;white-space:nowrap}
+.hero{min-height:74vh;background:radial-gradient(ellipse,#303034,#080808 75%);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:65px 14px;overflow:hidden}
+.small{color:#bbb;letter-spacing:3px;font-size:clamp(11px,2.7vw,15px)}
+.hero h1{font-size:clamp(52px,13vw,145px);line-height:1.12;letter-spacing:-.035em;margin:25px auto;padding:12px 4px;width:100%;max-width:100%}
+.hero h1 span{display:block}
+.slogan{font-size:clamp(17px,4vw,28px);letter-spacing:3px;margin:15px 0 35px}
+.btn{display:inline-block;background:linear-gradient(135deg,#fff,#999,#eee);color:#080808;border:0;padding:16px 30px;font-weight:700;letter-spacing:2px;text-align:center}
+.ticker{background:linear-gradient(90deg,#888,#eee,#888);color:#000;overflow:hidden;white-space:nowrap;padding:13px;font-weight:700;letter-spacing:4px}
+.ticker span{display:inline-block;animation:move 18s linear infinite}
+@keyframes move{to{transform:translateX(-50%)}}
+section{padding:65px 6%}
+.label{color:#999;letter-spacing:4px}
+.heading{font-size:clamp(42px,9vw,80px);margin:15px 0 30px}
+.product{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center;max-width:1100px;margin:auto}
+.photo{aspect-ratio:1;background:radial-gradient(circle,#333,#090909);border:1px solid #555;display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;padding:20px}
+.photo .chrome{font-size:clamp(40px,7vw,75px);line-height:1.1}
+.photo p{color:#aaa;font-size:12px;letter-spacing:2px}
+.details h3{font-size:36px;margin:0}
+.price{font-size:27px;margin:10px 0}
+.details p{color:#bbb;line-height:1.7}
+select{width:100%;background:#111;color:#fff;border:1px solid #777;padding:14px;margin:12px 0 20px}
+.details .btn{width:100%}
+.about{background:#141414;text-align:center;border-top:1px solid #444}
+.about p{max-width:600px;margin:auto;color:#bbb;line-height:1.8}
+footer{text-align:center;padding:35px;color:#aaa;border-top:1px solid #444}
+footer .chrome{font-size:36px}
+.overlay{display:none;position:fixed;inset:0;background:#000b;z-index:30}
+.overlay.open{display:block}
+.drawer{position:fixed;top:0;right:0;width:min(420px,100%);height:100dvh;background:#111;border-left:1px solid #777;z-index:31;transform:translateX(100%);transition:transform .3s;padding:24px;overflow:auto}
+.drawer.open{transform:translateX(0)}
+.drawerhead{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #555}
+.drawerhead h2{font-size:38px}
+.close{background:none;border:0;color:#fff;font-size:32px}
+.item{padding:18px 0;border-bottom:1px solid #444}
+.item button{background:#292929;border:1px solid #666;color:#fff;padding:5px 12px;margin:5px}
+.total{display:flex;justify-content:space-between;font-size:25px;padding:20px 0;border-top:1px solid #666;margin-top:20px}
+.checkout{width:100%}
+.note{font-size:13px;color:#aaa;line-height:1.6}
+@media(max-width:650px){
+ .product{grid-template-columns:1fr}
+ .hero h1{font-size:clamp(48px,13vw,76px)}
+ .logo{font-size:clamp(22px,6vw,30px)}
+ section{padding:50px 18px}
+}
+@media(prefers-reduced-motion:reduce){
+ *,*:before,*:after{animation:none!important;transition:none!important}
+}
 </style>
 </head>
 <body>
-<div class="ticker" aria-label="Brown Playas Los Angeles streetwear"><span>BROWN PLAYAS ★ LOS ANGELES STREETWEAR ★ BUILT DIFFERENT ★ BROWN PLAYAS ★ LOS ANGELES STREETWEAR ★ BUILT DIFFERENT ★ BROWN PLAYAS ★ LOS ANGELES STREETWEAR ★ BUILT DIFFERENT ★ </span></div>
-<header><a class="brand" href="#home">BROWN PLAYAS®</a><nav aria-label="Main navigation"><a href="#home">HOME</a><a href="#shop">SHOP</a><a href="#about">ABOUT</a></nav></header>
+
+<div class="top">BROWN PLAYAS • LOS ANGELES</div>
+
+<header>
+ <a href="#home" class="logo chrome">Brown Playas</a>
+ <button class="cartbtn" onclick="openCart()">CART (<span id="count">0</span>)</button>
+</header>
+
 <main>
-<section class="hero" id="home"><div><p class="eyebrow">EST. LOS ANGELES</p><h1><span>BROWN</span><span class="scribble">PLAYAS</span></h1><p class="tagline">FROM THE STREETS. FOR THE CULTURE.<br>LOS ANGELES STREETWEAR.</p><a class="cta" href="#shop">EXPLORE THE DROP ↗</a></div><div class="stamp">WEST COAST<br>ORIGINAL</div></section>
-<section class="collection" id="shop"><div class="section-head"><h2>THE COLLECTION</h2><small>OFFICIAL BROWN PLAYAS GEAR</small></div><div class="products"><article class="product"><div class="product-art"><strong>BROWN<br>PLAYAS</strong><em>GRAPHIC TEES</em></div><div class="product-info"><h3>GRAPHIC TEES</h3><p>PRODUCTS COMING SOON</p></div></article><article class="product"><div class="product-art"><strong>BP$</strong><em>HEADWEAR</em></div><div class="product-info"><h3>HEADWEAR</h3><p>PRODUCTS COMING SOON</p></div></article><article class="product"><div class="product-art"><strong>WEST<br>SIDE</strong><em>HOODIES</em></div><div class="product-info"><h3>HOODIES</h3><p>PRODUCTS COMING SOON</p></div></article></div></section>
-<section class="manifesto" id="about"><div><h2>NOT JUST<br>A BRAND.</h2><p>BROWN PLAYAS — LOS ANGELES ROOTS. INDEPENDENT STREETWEAR. MADE FOR THE CULTURE.</p></div></section>
-</main><footer><strong>BROWN PLAYAS®</strong><span>© 2026 BROWN PLAYAS LLC. ALL RIGHTS RESERVED.</span></footer>
+<section class="hero" id="home">
+ <div class="small">LOS ANGELES • WEST COAST ORIGINALS</div>
+ <h1 class="chrome"><span>Brown</span><span>Playas</span></h1>
+ <div class="slogan">BUILT DIFFERENT. WORN LOUD.</div>
+ <a class="btn" href="#shop">SHOP THE DROP ↓</a>
+</section>
+
+<div class="ticker">
+ <span>BROWN PLAYAS ✦ WEST COAST ✦ STREET CULTURE ✦ BROWN PLAYAS ✦ WEST COAST ✦ STREET CULTURE ✦</span>
+</div>
+
+<section id="shop">
+ <div class="label">01 / THE COLLECTION</div>
+ <h2 class="heading chrome">The Drop</h2>
+ <div class="product">
+  <div class="photo">
+   <div class="chrome">Brown<br>Playas</div>
+   <p>GHOSTFACE TEE<br>PRODUCT PHOTO COMING SOON</p>
+  </div>
+  <div class="details">
+   <h3>GHOSTFACE TEE</h3>
+   <div class="price">$40.00 USD</div>
+   <p>Original BROWN PLAYAS graphic tee featuring Ghostface artwork on the back and matching lettering on the front.</p>
+   <label for="size">SELECT SIZE</label>
+   <select id="size">
+    <option value="M">Medium (M)</option>
+    <option value="L">Large (L)</option>
+    <option value="XL">Extra Large (XL)</option>
+    <option value="2XL">2XL</option>
+    <option value="3XL">3XL</option>
+   </select>
+   <button class="btn" onclick="addToCart()">ADD TO CART +</button>
+  </div>
+ </div>
+</section>
+
+<section class="about" id="about">
+ <div class="label">02 / THE MOVEMENT</div>
+ <h2 class="heading chrome">West Coast Born</h2>
+ <p>BROWN PLAYAS is an independent Los Angeles streetwear brand. Original designs, bold identity, and authentic West Coast culture. Built different. Worn loud.</p>
+</section>
+</main>
+
+<footer>
+ <div class="chrome">Brown Playas</div>
+ <p>LOS ANGELES, CALIFORNIA</p>
+ <p>© BROWN PLAYAS. ALL RIGHTS RESERVED.</p>
+</footer>
+
+<div class="overlay" id="overlay" onclick="closeCart()"></div>
+
+<aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="Shopping cart" aria-hidden="true">
+ <div class="drawerhead">
+  <h2 class="chrome">Your Cart</h2>
+  <button class="close" onclick="closeCart()" aria-label="Close cart">×</button>
+ </div>
+ <div id="items"></div>
+ <div class="total"><span>Subtotal</span><span id="total">$0.00</span></div>
+ <button class="btn checkout" onclick="checkout()">CHECKOUT →</button>
+ <p class="note">Stripe checkout is not connected yet. No payment will be taken. Shipping and taxes are not included.</p>
+</aside>
+
+<script>
+const PRICE=40;
+const SIZES=["M","L","XL","2XL","3XL"];
+let cart=[];
+
+try{
+ const saved=JSON.parse(localStorage.getItem("bp_cart")||"[]");
+ if(Array.isArray(saved)){
+  cart=saved.filter(x=>SIZES.includes(x.size)&&Number.isInteger(x.qty)&&x.qty>0&&x.qty<=99);
+ }
+}catch(e){cart=[]}
+
+function save(){
+ try{localStorage.setItem("bp_cart",JSON.stringify(cart))}catch(e){}
+ render();
+}
+
+function addToCart(){
+ const size=document.getElementById("size").value;
+ if(!SIZES.includes(size))return;
+ const item=cart.find(x=>x.size===size);
+ if(item)item.qty=Math.min(99,item.qty+1);
+ else cart.push({size:size,qty:1});
+ save();
+ openCart();
+}
+
+function changeQty(size,delta){
+ const item=cart.find(x=>x.size===size);
+ if(!item)return;
+ item.qty+=delta;
+ if(item.qty<=0)cart=cart.filter(x=>x.size!==size);
+ if(item.qty>99)item.qty=99;
+ save();
+}
+
+function openCart(){
+ document.getElementById("overlay").classList.add("open");
+ document.getElementById("drawer").classList.add("open");
+ document.getElementById("drawer").setAttribute("aria-hidden","false");
+ document.body.style.overflow="hidden";
+}
+
+function closeCart(){
+ document.getElementById("overlay").classList.remove("open");
+ document.getElementById("drawer").classList.remove("open");
+ document.getElementById("drawer").setAttribute("aria-hidden","true");
+ document.body.style.overflow="";
+}
+
+function render(){
+ const container=document.getElementById("items");
+ container.replaceChildren();
+ let count=0,total=0;
+ cart.forEach(item=>{
+  count+=item.qty;
+  total+=item.qty*PRICE;
+  const div=document.createElement("div");
+  div.className="item";
+  const name=document.createElement("strong");
+  name.textContent="GHOSTFACE TEE — "+item.size;
+  const cost=document.createElement("p");
+  cost.textContent="$40.00 × "+item.qty;
+  const minus=document.createElement("button");
+  minus.textContent="−";
+  minus.setAttribute("aria-label","Remove one "+item.size);
+  minus.onclick=()=>changeQty(item.size,-1);
+  const qty=document.createElement("span");
+  qty.textContent=item.qty;
+  const plus=document.createElement("button");
+  plus.textContent="+";
+  plus.setAttribute("aria-label","Add one "+item.size);
+  plus.onclick=()=>changeQty(item.size,1);
+  div.append(name,cost,minus,qty,plus);
+  container.append(div);
+ });
+ if(!cart.length){
+  const empty=document.createElement("p");
+  empty.textContent="Your cart is empty.";
+  container.append(empty);
+ }
+ document.getElementById("count").textContent=count;
+ document.getElementById("total").textContent="$"+total.toFixed(2);
+}
+
+function checkout(){
+ if(!cart.length){alert("Your cart is empty.");return}
+ alert("Your cart is ready! Stripe checkout must be connected securely before accepting orders.");
+}
+
+document.addEventListener("keydown",e=>{
+ if(e.key==="Escape")closeCart();
+});
+render();
+</script>
 </body>
 </html>
