@@ -288,6 +288,23 @@ render();
     notice.textContent = result.paid === true
       ? "Order confirmed. Thanks for shopping with BROWN PLAYAS!"
       : "Your payment hasn’t been confirmed yet.";
+ if (result.paid === true) {
+
+      const clearedKey = "bp_cart_cleared_" + sessionId;
+
+      if (!localStorage.getItem(clearedKey)) {
+
+        cart = [];
+
+        localStorage.removeItem("bp_cart");
+
+        localStorage.setItem(clearedKey, "1");
+
+        render();
+
+      }
+
+    }
   } catch {
     notice.textContent = "We couldn’t verify your payment here. Please don’t pay again until you’ve checked your order.";
   }
