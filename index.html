@@ -265,6 +265,35 @@ document.addEventListener("keydown",e=>{
  if(e.key==="Escape")closeCart();
 });
 render();
+ async function showOrderConfirmation() {
+  const query = new URLSearchParams(window.location.search);
+  const sessionId = query.get("session_id");
+  if (query.get("checkout") !== "success" || !sessionId) return;
+
+  const notice = document.createElement("p");
+  notice.setAttribute("role", "status");
+  notice.style.cssText = "padding:16px;text-align:center;background:#171717;color:#fff;";
+  notice.textContent = "Checking your payment…";
+  document.querySelector("main").prepend(notice);
+
+  try {
+    const url = new URL(
+      "https://brown-playas-checkout.5n649wnpmt.workers.dev/order-status"
+    );
+    url.searchParams.set("session_id", sessionId);
+    const response = await fetch(url);
+    if (!response.ok) throw new Error("Could not verify payment");
+
+    const result = await response.json();
+    notice.textContent = result.paid === true
+      ? "Order confirmed. Thanks for shopping with BROWN PLAYAS!"
+      : "Your payment hasn’t been confirmed yet.";
+  } catch {
+    notice.textContent = "We couldn’t verify your payment here. Please don’t pay again until you’ve checked your order.";
+  }
+}
+
+showOrderConfirmation();
 </script>
 </body>
 </html>
