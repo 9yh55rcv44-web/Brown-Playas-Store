@@ -225,6 +225,7 @@ function render(){
   container.append(empty);
  }
  document.getElementById("count").textContent=count;
+  document.getElementById("total").textContent = "$" + total.toFixed(2);
 }
 async function checkout() {
   if (!cart.length) {
